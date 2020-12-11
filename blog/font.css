@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'PingFang Bold';
+	src: url('./static/font/PingFang Bold.ttf');
+}
+*{
+	font-family: PingFang Bold;
+}
