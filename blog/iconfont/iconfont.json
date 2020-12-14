@@ -1,0 +1,23 @@
+{
+  "id": "2268794",
+  "name": "blog",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2552077",
+      "name": "个人主页",
+      "font_class": "gerenzhuye",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "13533494",
+      "name": "备案",
+      "font_class": "beian",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    }
+  ]
+}

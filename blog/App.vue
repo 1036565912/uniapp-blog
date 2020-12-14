@@ -20,4 +20,5 @@
 <style>
 	/* 引入全局字体样式 */
 	@import "font.css";
+	@import "iconfont/iconfont.css";
 </style>
