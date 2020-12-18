@@ -30,24 +30,27 @@
 			display: flex;
 			flex-direction: column; //主轴方向
 			justify-content: space-between;
-			align-items: flex-end;
+			align-items: center;
 			background-color: $u-type-primary-light;
 			height: calc(100vh - 44px);
+			width: 750rpx;
 		}
 		
 		.first {
 			border: $u-type-primary-disabled solid 1rpx;
 			height: 30%;
+			width: 50%;
 		}
 		
 		.second {
 			border: $u-type-success solid 1rpx;
 			height: 30%;
-			
+			width: 50%;
 		}
 		
 		.third {
 			border: $u-type-error solid 1rpx;
 			height: 30%;
+			width: 50%;
 		}
 </style>
