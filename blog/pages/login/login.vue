@@ -91,7 +91,7 @@
 		flex-direction: column;
 		justify-content: center;
 		background-color: $u-type-primary-light;
-		height: 100%;
+		height: calc(100vh - 44px);
 	}
 	
 	.logo {
