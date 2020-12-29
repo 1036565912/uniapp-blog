@@ -6,7 +6,7 @@
 			 </view>
 		 </view>
 		 <view class="content">
-			 <u-form :model="form"  :border-bottom="false" :error-type="errorType">
+			 <u-form :model="form"  :border-bottom="false" :error-type="errorType" ref="uForm">
 			 	<u-form-item label="用户名" label-align="right" label-width="120" prop="username">
 			 		<u-input v-model="form.username" :border="border"></u-input>
 			 	</u-form-item>
@@ -41,10 +41,48 @@
 				passwordIcon: true,
 				loading: false,
 				disable: false,
+				rules: {
+					username: [
+						{
+							required: true,
+							message: '请输入用户名',
+							trigger: ['change', 'blur']
+						}
+					],
+					password: [
+						{
+							required: true,
+							message: '请输入密码',
+							trigger: ['change', 'blur']
+						},
+						{
+							min: 8,
+							message: '密码最少8位字符',
+							trigger: ['change', 'blur']
+						}
+					]
+				}
 			}
 		},
 		methods: {
-			
+			login() {
+				this.disable = true;
+				this.loading = true;
+				
+				this.$refs.uForm.validate( valid => {
+					console.log(valid)
+					if (!valid) {
+						this.disable = false;
+						this.loading = false;
+						return ;
+					}
+					
+					
+				});
+			}
+		},
+		onReady() {
+			this.$refs.uForm.setRules(this.rules);
 		}
 	}
 </script>
@@ -96,8 +134,8 @@
 		}
 		
 		.footer {
-			height: 9%;
 			display: flex;
+			flex: auto;
 			flex-direction: column;
 			justify-content: flex-end;
 			align-items: center;

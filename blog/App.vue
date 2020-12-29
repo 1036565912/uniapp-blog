@@ -19,6 +19,10 @@
 
 <style>
 	/* 引入全局字体样式 */
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
 	@import "font.css";
 	@import "iconfont/iconfont.css";
 </style>
