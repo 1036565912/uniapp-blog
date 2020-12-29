@@ -21,15 +21,6 @@
             }
             
         }
-        ,{
-            "path" : "pages/new_login/new_login",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "新登录页",
-                "enablePullDownRefresh": false
-            }
-            
-        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

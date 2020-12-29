@@ -1,12 +1,16 @@
 <template>
 	<view class="content">
-		<view class="first">
-			1
+		<view class="header">
+			<image :src="logo"></image>
 		</view>
-		<view class="second">
-			2
+		<view class="body">
+			<u-form :model="form" ref="uForm">
+				<u-form-item>
+					
+				</u-form-item>
+			</u-form>
 		</view>
-		<view class="third">
+		<view class="footer">
 			3
 		</view>
 	</view>
@@ -16,7 +20,10 @@
 	export default {
 		data() {
 			return {
-				
+				logo: '/static/study_1.jpg',
+				form: {
+					
+				}
 			}
 		},
 		methods: {
@@ -36,21 +43,25 @@
 			width: 750rpx;
 		}
 		
-		.first {
-			border: $u-type-primary-disabled solid 1rpx;
-			height: 30%;
-			width: 50%;
+		.header {
+			height: 40%;
+			width: 100%;
+			image {
+				width: 100%;
+				height: 100%;
+			}
 		}
 		
-		.second {
+		.body {
 			border: $u-type-success solid 1rpx;
-			height: 30%;
-			width: 50%;
+			height: 50%;
+			width: 80%;
 		}
 		
-		.third {
+		.footer {
 			border: $u-type-error solid 1rpx;
-			height: 30%;
-			width: 50%;
+			flex: auto;
+			//height: 10%;
+			width: 100%;
 		}
 </style>
