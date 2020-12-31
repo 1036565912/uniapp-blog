@@ -87,7 +87,7 @@
 						id: 3,
 						name: 'Golanger',
 						disable: false
-					}
+					},
 				]
 			}
 		},
@@ -107,6 +107,9 @@
 			register() {
 				console.log('注册')
 			}
+		},
+		onReady() {
+			this.$refs.uForm.setRules();
 		}
 	}
 </script>
@@ -132,9 +135,11 @@
 		}
 		
 		.body {
-			margin-top: 2%;
+			margin-top: 5%;
 			width: 80%;
-			flex: auto;
+			//flex: auto;
+			height: 65%;
+			overflow: scroll;
 		}
 		
 </style>
